@@ -1,0 +1,43 @@
+<h3 class="nav justify-content-center"> Mural de Vagas - Construido com Angular </h3>
+<h4 class="nav justify-content-center"> Função Cadastrar / Alterar / Excluir </h4>
+<br>
+
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Id -----------></span>
+    <input type="text" class="form-control" name="id" [(ngModel)]="vaga.id" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Nome ------></span>
+    <input type="text" class="form-control" name="nome" [(ngModel)]="vaga.nome" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Foto --------></span>
+    <input type="text" class="form-control" name="foto" [(ngModel)]="vaga.foto" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Descrição --></span>
+    <input type="text" class="form-control" name="descricao" [(ngModel)]="vaga.descricao"
+        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Salário ------></span>
+    <input type="text" class="form-control" name="salario" [(ngModel)]="vaga.salario" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+</div>
+
+<ul class="nav justify-content-center">
+    <button type="button" class="btn btn-outline-primary" (click)="cadastrar()">Cadastrar</button>
+    <button type="button" class="btn btn-outline-primary" (click)="atualizar(vaga.id)">Atualizar</button>
+    <button type="button" class="btn btn-outline-primary" (click)="excluir(vaga.id)">Excluir</button>
+</ul>
+
+<!--
+<label>Id</label><input type="text" name="id" [(ngModel)]="vaga.id"><br>
+<label>Nome</label><input type="text" name="nome" [(ngModel)]="vaga.nome"><br>
+<label>Foto</label><input type="text" name="foto" [(ngModel)]="vaga.foto"><br>
+<label>Descricao</label><input type="text" name="descricao" [(ngModel)]="vaga.descricao"><br>
+<label>Salário</label><input type="text" name="salario" [(ngModel)]="vaga.salario"><br>-->
